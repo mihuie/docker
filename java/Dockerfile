@@ -20,4 +20,4 @@ RUN rm -f /tmp/jdk-8-linux-x64.rpm && yum clean all
 ENV JAVA_HOME /usr/java/latest
 ENV PATH $PATH:$JAVA_HOME/bin
 
-ENTRYPOINT ["/bin/bash", "-c", "java -version"]
+CMD ["/bin/bash", "-c", "java -version"]
